@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1a1a1a">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=2">
+<meta name="description" content="LINHA90 — uma nova experiência de loja.">
+<title>Catálogo | LINHA90</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="store.css">
+<script defer src="store.js"></script>
+</head>
+<body class="store-page" data-page="store" data-view="catalog">
+<a class="skip" href="#catalogo">Pular para o catálogo</a>
+<nav class="nav"><a class="brand" href="./"><img class="brand-logo" src="assets/linha90-light.svg" alt="LINHA90" width="190" height="42"><small> // STORE</small></a><div class="navlinks"><a href="./">Início</a><a href="catalogo.html" aria-current="page">Catálogo</a><a href="./#sobre">Sobre</a><a class="ghost" href="conta.html">Minha conta</a><button id="favorites" class="ghost" type="button" aria-pressed="false">Favoritos</button><button id="cart-open" type="button" class="action">Carrinho <span id="cart-count">0</span></button></div></nav>
+<main>
+
+<section class="catalog-hero"><div class="eyebrow">// COLLECTION DATABASE</div><h1>CATÁLOGO <span>90.</span></h1><p>Explore a coleção LINHA90. Encontre seu estilo.</p></section>
+<section id="catalogo" class="catalog"><div class="heading"><div><div class="eyebrow">// INVENTÁRIO</div><h2>Todos os produtos</h2></div><span id="result-count" class="muted"></span></div><div class="toolbar"><label><span>Buscar</span><input id="search" type="search" placeholder="Buscar produtos..."></label><label><span>Categoria</span><select id="category"><option value="">Todas</option></select></label><label><span>Ordenar</span><select id="sort"><option value="new">Destaques</option><option value="asc">Menor preço</option><option value="desc">Maior preço</option><option value="name">Nome</option></select></label></div><div id="product-grid" class="products" aria-live="polite"></div></section>
+
+</main>
+<footer class="store-footer"><a class="brand" href="./"><img class="brand-logo" src="assets/linha90-light.svg" alt="LINHA90" width="152" height="34"></a><span>© LINHA90</span><a class="muted small" href="conta.html?acesso=vendedor">Área do vendedor</a></footer>
+<dialog id="product-dialog" class="modal"><div class="dialog-head"><h2>Detalhes</h2><button class="ghost close-dialog" type="button" aria-label="Fechar">×</button></div><div id="product-detail"></div></dialog>
+<dialog id="cart-dialog" class="modal"><div class="dialog-head"><h2>Seu carrinho</h2><button class="ghost close-dialog" type="button" aria-label="Fechar">×</button></div><div id="cart-items"></div><div id="cart-summary"></div><button id="demo-order" class="action full" type="button" disabled>Finalizar pedido</button><p class="muted small">Compras online ainda indisponíveis.</p></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>
