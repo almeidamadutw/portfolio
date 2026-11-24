@@ -27,3 +27,7 @@ O projeto é um protótipo estático, não uma operação comercial. Não existe
 Antes de qualquer operação real é necessário banco compartilhado, autenticação com autorização no servidor, transações atômicas, armazenamento de imagens, catálogo validado, testes de segurança, políticas de privacidade, histórico de pedidos, integração de frete e pagamento para produtos permitidos. A tela Clientes é informativa e ainda não gerencia clientes. Não foram configurados pagamentos, entregas, banco ou login.
 
 A consulta Vercel ao projeto informado retornou 404, portanto não há deploy confirmado. Mantenha a produção original na main até validar o protótipo.
+
+## Identidade visual atualizada
+
+As quatro referências de marca foram inspecionadas. A versão clara e a versão escura foram vetorizadas a partir dos contornos das imagens PNG transparentes, com proporções preservadas e pequenas aproximações de contorno. Os arquivos web estão em assets/linha90-light.svg e assets/linha90-dark.svg; o favicon é inspirado no zero da marca. O degradê horizontal da referência colorida usa #006EFF → #4DA4FF; o fundo neutro de referência é #1A1A1A e o lettering claro é #EEEDE9. A vitrine utiliza a marca clara no cabeçalho, título e rodapé, e a escura no bloco azul da página inicial. O painel usa a marca clara e os mesmos acentos de cor. O CSS e os fluxos de demonstração anteriores foram preservados. A main permanece intacta.
